@@ -1,0 +1,1 @@
+document.window.addEventListener('load', 'main');
