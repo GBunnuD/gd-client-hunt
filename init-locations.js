@@ -7,6 +7,10 @@ export default [{
         // East: -94.88189,
         // West:-94.88189,
         //  South: 35.8425,
+        North: 40.35287,
+        West: -98.88805,
+        South: 40.35287,
+        East: -98.88805,
     },
     {
         Name: 'Hyvee',
