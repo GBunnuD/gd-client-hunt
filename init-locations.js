@@ -9,7 +9,9 @@ export default [{
         //  South: 35.8425,
     },
     {
-        Name: 'mooyah',
+        Name: 'Hyvee',
+        Latitude: 40.33431827400698,
+        Longitude: -94.87211833862581,
         // Latitude: 40.35287,
         // Longitude: -98.88805,
         North: 40.35287,

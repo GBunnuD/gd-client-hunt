@@ -62,7 +62,7 @@ async function locationHandler() {
     if (error) {
         document.getElementById("error-message").innerHTML = "You're not in the radius range.";
     } else {
-        document.getElementById("error-message").innerHTML = "";
+        document.getElementById("error-message").innerHTML = "You are not in Range";
     }
 }
 
