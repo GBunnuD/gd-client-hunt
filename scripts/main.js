@@ -34,6 +34,8 @@ async function locationHandler() {
     locationsArray.forEach(function(value) {
         if (isInside(value.Latitude, value.Longitude)) {
             document.getElementById("locationAnswer").innerHTML = value.Name;
+            let utterance = new SpeechSynthesisUtterance(` You have found Quest location ${value.Name}`);
+            speechSynthesis.speak(utterance);
             error = false;
         }
     });
@@ -41,7 +43,9 @@ async function locationHandler() {
 
 
     if (error) {
-        document.getElementById("error-message").innerHTML = "You're not in the radius range.";
+        document.getElementById("error-message").innerHTML = "You are not in the range of the location.";
+        let utterance = new SpeechSynthesisUtterance("You are not in the range of the location.");
+        speechSynthesis.speak(utterance);
     } else {
         document.getElementById("error-message").innerHTML = "";
     }
