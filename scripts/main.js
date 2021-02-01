@@ -63,7 +63,7 @@ function isInside(questLat, questLon) {
     console.log("quest lat " + questLat);
 
 
-    if (distance < 20) {
+    if (distance < 10) {
         return true;
     } else {
         return false;
