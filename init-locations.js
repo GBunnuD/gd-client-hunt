@@ -1,7 +1,7 @@
 export default [{
 
         Name: 'Horizons west apartments',
-        Latitude: 40.3589695,
+        Latitude: 50.3589695,
         Longitude: -94.8831951,
         North: 40.35288,
         West: -98.88805,
@@ -9,16 +9,15 @@ export default [{
         East: -98.88805,
     },
     {
-        Name: 'NWMSU',
-        Latitude: 38.757629,
-        Longitude: -93.736862,
+        Name: 'NWMSU Library',
+        Latitude: 40.358970,
+        Longitude: -94.883195,
 
-        North: 40.35287,
-        West: -98.88805,
-        South: 40.35287,
-        East: -98.88805,
-    },
-    {
+        North: 40.358970,
+        West: -94.883195,
+        South: 40.358970,
+        East: -94.883195,
+    }, {
         Name: 'Apple Bees',
         Latitude: 40.317799,
         Longitude: -93.873466,

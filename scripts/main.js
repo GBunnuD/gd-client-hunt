@@ -34,7 +34,7 @@ async function locationHandler() {
     locationsArray.forEach(function(value) {
         if (isInside(value.Latitude, value.Longitude)) {
             document.getElementById("locationAnswer").innerHTML = value.Name;
-            let utterance = new SpeechSynthesisUtterance(` Welcome to ${value.Name}`);
+            let utterance = new SpeechSynthesisUtterance(`     Welcome to the ${value.Name}`);
             speechSynthesis.speak(utterance);
             error = false;
         }
