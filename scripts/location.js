@@ -8,11 +8,7 @@ const inside = (device, bounds) => {
     // console.log(device.latitude < bounds.North);
     // console.log(device.longitude > bounds.West);
     // console.log(device.longitude < bounds.East);
-    const ans =
-        device.latitude > bounds.South &&
-        device.latitude < bounds.North &&
-        device.longitude > bounds.West &&
-        device.longitude < bounds.East;
+    const ans = device.latitude > bounds.South && device.latitude < bounds.North && device.longitude > bounds.West && device.longitude < bounds.East;
     // console.log(`CHECKING ${bounds.Name} ANS: ${ans}`);
     return ans;
 };

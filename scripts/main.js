@@ -63,7 +63,7 @@ function isInside(questLat, questLon) {
     console.log("quest lat " + questLat);
 
 
-    if (distance < 10) {
+    if (distance < 0.3) {
         return true;
     } else {
         return false;
@@ -72,11 +72,10 @@ function isInside(questLat, questLon) {
 
 
 function distanceBetweenLocations(currentlat, currentlon, questLat, questLon) {
-    var p = 0.017453292519943295; // Math.PI / 180
-    // var c = Math.cos;
+    var p = 0.017453292519943295;
     var a = 0.5 - Math.cos((questLat - currentlat) * p) / 2 +
         Math.cos(currentlat * p) * Math.cos(questLat * p) *
         (1 - Math.cos((questLon - currentlon) * p)) / 2;
 
-    return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+    return 12742 * Math.asin(Math.sqrt(a));
 }
